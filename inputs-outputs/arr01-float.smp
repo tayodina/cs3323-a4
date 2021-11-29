@@ -1,4 +1,0 @@
-float a[3];
-a[1] := 2;
-write a[0];
-write a[1];
