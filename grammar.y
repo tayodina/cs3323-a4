@@ -182,7 +182,7 @@ construct_if :
     {
       // Second semantic action
       itab_instruction_add (itab, OP_JMP, NOARG, NOARG, TBDARG);
-      @$.begin.line =  INSTRUCTION_LAST;
+      @$.begin.line = INSTRUCTION_LAST;
 
       int jmp_entry = @5.begin.line;
       itab->tab[jmp_entry]->addr3 = INSTRUCTION_NEXT;
