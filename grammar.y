@@ -164,7 +164,7 @@ construct_repeat:
       int jump_dst = @2.begin.line;
       // TODO: Generate a jump-if-zero (OP_JZ) to the address stored in the first semantic
       // action of this rule
-      itab_instruction_add (itab, OP_JZ, INSTRUCTION_LAST, NOARG, jump_dst);
+      itab_instruction_add (itab, OP_JZ, @$.begin.line, NOARG, jump_dst);
     }
     ;
 
