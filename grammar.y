@@ -532,4 +532,3 @@ expr_list : expr_list  T_COMMA a_expr
 void yy::simple_parser::error (const yy::location & l, const std::string & s) {
 	std::cerr << "Simple Parser error at " << l << " : " << s << std::endl;
 }
-
